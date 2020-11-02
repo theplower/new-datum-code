@@ -11,7 +11,7 @@ but when used to detect hand signs of a random conditions it has a barely workin
 
 # Key pressing with hand sign
 Similar to the sign language classifier, To run the hand-sign-to-keypress program, type: *python Keydetect.py path-to-video-of-recorded-hand-directions* in the terminal.
-It has a very good accuracy provided that it has a decent lighting conditions.
+It has somehow decent accuracy provided that it has a good lighting conditions.
 If it detects a hand directed upwards it presses UP-key, and similar to that all the other three directions.
 Specifically, the hand must be in the top left quarter of the video as the program is suited to detect hands in this position.
 

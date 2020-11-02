@@ -40,7 +40,10 @@ while True:
 	# Assert that the stream isn't cut
 	if not success:
 		break
-	# Extract the hand	
+	# Uncomment the next line if the image is flipped
+	# origFrame = cv.flip(origFrame, 1)
+	
+	# Extract the hand
 	frame = origFrame[0: x2, 0: y2]
 	
 	# Set the extracted part of the image to the form known to the model
@@ -74,8 +77,6 @@ while True:
 	# Show the recognized direction on the video (or Live Camera stream)
 	cv.putText(origFrame, message, (20, 25), font, 0.75, (255, 0, 0), 2, cv.LINE_AA)
 	cv.rectangle(origFrame, (0, 0), (x2, y2), (0, 255, 0), 3)
-	# Uncomment the next line if the image is flipped
-	# origFrame = cv.flip(origFrame, 1)
 	cv.imshow('Window', origFrame)
 	if cv.waitKey(1) & 0xFF == ord('q'):
 		break

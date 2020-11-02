@@ -21,3 +21,4 @@ it can be used to scroll up or down when browsing without using mouse.
 
 
 In order to make any of the programs work in realtime, change the line of *cap = cv.VideoCapture(sys.argv[1])* to *cap = cv.VideoCapture(0)*
+and flip it if necessary
